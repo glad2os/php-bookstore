@@ -1,0 +1,110 @@
+<div class="ui container" style="margin:15px 0;">
+
+    <div class="ui top attached tabular menu">
+        <a class="item active" data-tab="first">Персональная информация</a>
+        <a class="item" data-tab="4th">Добавить новый адрес</a>
+        <a class="item" data-tab="second">История покупок</a>
+        <a class="item" data-tab="third">Обратная связь</a>
+    </div>
+    <div class="ui bottom attached tab segment active" data-tab="first">
+        <form class="ui form" method="post" action="">
+            <div class="ui form">
+                <div class="two fields">
+                    <div class="field">
+                        <label>Логин</label>
+                        <input type="text" name="login" placeholder="Логин">
+                    </div>
+                    <div class="field">
+                        <label>Пароль</label>
+                        <input type="password" name="password" placeholder="Пароль">
+                    </div>
+                </div>
+            </div>
+            <div class="ui form">
+                <div class="three fields">
+                    <div class="field">
+                        <label>Фамилия</label>
+                        <input type="text" name="last_name" placeholder="Фамилия">
+                    </div>
+                    <div class="field">
+                        <label>Иия</label>
+                        <input type="text" name="first_name" placeholder="Иия">
+                    </div>
+                    <div class="field">
+                        <label>Отчество</label>
+                        <input type="text" name="second_name" placeholder="Отчество">
+                    </div>
+                </div>
+            </div>
+            <input type="button" value="Обновить" class="ui submit button" onclick="updateUser(this.form)">
+        </form>
+
+        <div class="ui bottom attached warning message" style="margin:15px 0;">
+            <i class="icon help"></i> А вы подписаны на нашу медиа рассылку?
+        </div>
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="second">
+        <table class="ui compact celled  table">
+            <thead>
+            <tr>
+                <th>Покупатель</th>
+                <th>Название</th>
+                <th>Кол-во</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>Эффективная работа с унаследованным кодом</td>
+                <td>2332594872</td>
+                <td>2</td>
+            </tr>
+            </tbody>
+            <tfoot class="full-width">
+            <tr>
+                <th colspan="3">
+                    <div class="ui small button">Одобрить</div>
+                </th>
+            </tr>
+            </tfoot>
+        </table>
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="4th">
+        <div class="ui form">
+            <div class="three fields">
+                <div class="field">
+                    <label>Индекс</label>
+                    <input type="text" name="index" placeholder="Индекс">
+                </div>
+                <div class="field">
+                    <label>Город</label>
+                    <input type="text" name="city" placeholder="Город">
+                </div>
+                <div class="field">
+                    <label>Улица</label>
+                    <input type="text" name="street" placeholder="Улица">
+                </div>
+                <div class="field">
+                    <label>Дом</label>
+                    <input type="text" name="house" placeholder="Дом">
+                </div>
+                <div class="field">
+                    <label>Квартира</label>
+                    <input type="text" name="apartments" placeholder="Квартира">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui bottom attached tab segment" data-tab="third">
+        <div class="ui form">
+            <div class="field">
+                <label>Возникли вопросы?
+                    Напишите нам</label>
+                <textarea></textarea>
+                <button class="fluid ui button">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>

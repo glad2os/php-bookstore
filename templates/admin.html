@@ -1,0 +1,112 @@
+<div class="ui container">
+    <div class="ui top attached tabular menu">
+        <a class="active item" data-tab="first">Добавить книгу</a>
+        <a class="item" data-tab="second">Добавить автора</a>
+        <a class="item" data-tab="third">Обновить табл. книги</a>
+        <a class="item" data-tab="4th">Обновить табл. авторы</a>
+    </div>
+    <div class="ui bottom attached active tab segment" data-tab="first">
+        <div class="ui form">
+            <form action="" method="post">
+                <div class="fields">
+                    <div class="field">
+                        <label>Название</label>
+                        <input type="text" name="title" placeholder="Название">
+                    </div>
+                    <div class="field">
+                        <label>isbn</label>
+                        <input type="text" name="isbn" placeholder="isbn">
+                    </div>
+                    <div class="field">
+                        <label>Цена</label>
+                        <input type="text" name="price" placeholder="Цена">
+                    </div>
+                    <div class="field">
+                        <label>Добавить автора</label>
+                        <select name="authors" multiple="" class="ui fluid dropdown">
+                        </select>
+                    </div>
+                </div>
+                <input type="button" value="Отправить" class="ui button" onclick="addBook(this.form)">
+            </form>
+        </div>
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="second">
+        <div class="ui form">
+            <form action="" method="post">
+                <div class="field">
+                    <label>Автор</label>
+                    <input type="text" name="name" placeholder="Автор">
+                </div>
+                <input type="button" class="ui button" onclick="addAuthor(this.form)" value="Отправить">
+            </form>
+        </div>
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="third">
+        <div class="ui form">
+            <div class="fields">
+                <div class="field">
+                    <label>Выберите книгу</label>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="gender">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Книга</div>
+                        <div class="menu">
+                            <div class="item" data-value="0">Заголовок 0</div>
+                            <div class="item" data-value="1">Заголовок 1</div>
+                            <div class="item" data-value="2">Заголовок 2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Название</label>
+                    <input type="text" name="title" placeholder="Название">
+                </div>
+                <div class="field">
+                    <label>isbn</label>
+                    <input type="text" name="isbn" placeholder="isbn">
+                </div>
+                <div class="field">
+                    <label>Цена</label>
+                    <input type="text" name="price" placeholder="Цена">
+                </div>
+                <div class="field">
+                    <label>Обновить автора (Не обязательное поле) </label>
+                    <div class="ui fluid search selection dropdown">
+                        <input type="hidden" name="country">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Выберите страну</div>
+                        <div class="menu">
+                            <div class="item" data-value="af"><i class="af flag"></i>Afghanistan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="ui button">Отправить</button>
+        </div>
+    </div>
+    <div class="ui bottom attached tab segment" data-tab="4th">
+        <div class="ui form">
+            <div class="fields">
+                <div class="field">
+                    <label>Выберите автора</label>
+                    <div class="ui selection dropdown">
+                        <input type="hidden" name="gender">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Автор</div>
+                        <div class="menu">
+                            <div class="item" data-value="0">Автор 0</div>
+                            <div class="item" data-value="1">Автор 1</div>
+                            <div class="item" data-value="2">Автор 2</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Автор</label>
+                    <input type="text" name="title" placeholder="Автор">
+                </div>
+            </div>
+            <button class="ui button">Отправить</button>
+        </div>
+    </div>
+</div>

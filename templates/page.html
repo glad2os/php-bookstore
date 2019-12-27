@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title><?=$title?></title>
+    <link rel="shortcut icon" href="/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+          integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q=" crossorigin="anonymous"/>
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <script rel="script" type="application/javascript" src="/assets/js/api.js"></script>
+    <script rel="script" type="application/javascript" src="/assets/js/cookies.js"></script>
+</head>
+<body style="display: flex;flex-direction: column;">
+
+<div class="ui equal width center aligned padded grid" id="Header">
+    <div class="row">
+        <div class="column">
+            <div class="tel"><a href="tel://8-800-555-35-35">8-800-555-35-35</a></div>
+        </div>
+        <div class="column">
+            <a href="#"><i class="vk icon"></i></a>
+            <a href="#"><i class="instagram icon"></i></a>
+            <a href="#"><i class="facebook icon"></i></a>
+            <a href="#"><i class="twitter icon"></i></a>
+        </div>
+        <div class="column">
+            <div class="nav-escape">
+                <p><a href='/account' id="login"></a><i onclick='signOut();' style='margin: 0 15px; cursor:pointer;'
+                                                        class="sign out alternate icon"></i></p>
+            </div>
+            <div class="nav-enter">
+                <p id="sign"><a href="/signin">Вход</a>/<a href="/signup">Регистрация</a></p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="pre-nav" style="text-align: center;">
+    <h1 style="display: inline-block; cursor: pointer;" onclick="window.location.href = '/'">GLADDOS
+        <div style="display: inline-block; color:red;">.</div>
+        STUDIO
+    </h1>
+    <p>Книги для программирования</p>
+</div>
+<div class="flex1" style="flex: 1;padding: 15px 0;">
+    <?=$content?>
+</div>
+<footer style="flex:2;">
+    <div class="ui container">
+        <div style="display: inline-block">
+            <p class="underline" style="display: inline-block">Ruslan Ibragimov</p>
+        </div>
+        <hr>
+        <p>&copy; gladdos studio 2019</p>
+        <p>all rights reserved</p>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI=" crossorigin="anonymous"></script>
+<script rel="script" type="application/javascript" src="/assets/js/loader.js"></script>
+<?=$scripts?>
+</body>
+</html>

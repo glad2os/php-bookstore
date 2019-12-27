@@ -1,0 +1,40 @@
+<div class="flex1" style="flex: 1;margin: 15px 0;">
+    <div class="ui raised very padded text container segment">
+        <h1>Регистрация</h1>
+        <div class="msg" style="margin: 15px 0;">
+        </div>
+        <form class="ui form" method="post" action="">
+            <div class="field">
+                <label>Логин</label>
+                <input type="text" name="login" placeholder="Логин">
+            </div>
+            <div class="field">
+                <label>Пароль</label>
+                <input type="password" name="password" placeholder="Пароль">
+            </div>
+            <div class="ui form">
+                <div class="three fields">
+                    <div class="field">
+                        <label>Фамилия</label>
+                        <input type="text" name="last_name" placeholder="Фамилия">
+                    </div>
+                    <div class="field">
+                        <label>Иия</label>
+                        <input type="text" name="first_name" placeholder="Иия">
+                    </div>
+                    <div class="field">
+                        <label>Отчество</label>
+                        <input type="text" name="second_name" placeholder="Отчество">
+                    </div>
+                </div>
+            </div>
+            <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox" tabindex="0" class="hidden">
+                    <label>I agree to the Terms and Conditions</label>
+                </div>
+            </div>
+            <input type="button" value="Отправить" class="ui disabled submit button" onclick="reg(this.form)">
+        </form>
+    </div>
+</div>
